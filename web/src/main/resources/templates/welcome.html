@@ -46,7 +46,8 @@
 <script type="text/javascript">
     $.get( "http://localhost:8081/user", function( data ) {
         $( ".result" ).html( data );
-        alert( "Load was performed." );
+        var ddd = data;
+        alert( "Load was performed, " + ddd.fullName);
     });
 </script>
 </body>
